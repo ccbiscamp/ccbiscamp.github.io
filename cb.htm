@@ -1,0 +1,159 @@
+<DOCTYPE! html>
+<html>
+<head>
+
+		<!--Functions ------------------------------------------------------------------------------------------------------------>
+	<script>
+	
+		function services() {
+		
+			document.getElementById("services").style.display = "block";
+					
+			document.getElementById("locations").style.display = "none";
+			
+			document.getElementById("gallery").style.display = "none";
+			
+			document.getElementById("contactInfo").style.display = "none";
+			
+		}
+		
+		function locations() {
+		
+			document.getElementById("services").style.display = "none";
+					
+			document.getElementById("locations").style.display = "block";
+			
+			document.getElementById("gallery").style.display = "none";
+			
+			document.getElementById("contactInfo").style.display = "none";
+			
+		}
+		
+		function gallery() {
+		
+			document.getElementById("services").style.display = "none";
+					
+			document.getElementById("locations").style.display = "none";
+			
+			document.getElementById("gallery").style.display = "block";
+			
+			document.getElementById("contactInfo").style.display = "none";
+			
+		}
+		
+		function contact() {
+		
+			document.getElementById("services").style.display = "none";
+					
+			document.getElementById("locations").style.display = "none";
+			
+			document.getElementById("gallery").style.display = "none";
+			
+			document.getElementById("contactInfo").style.display = "block";
+			
+		}
+		
+	</script>
+
+		<!------------------------------------------------------------------------------------------------------------------------>
+		<link rel="stylesheet" href="cb.css">
+		<meta charset="UTF-8">
+		<meta name="description" content="Kitchen Grease Recycling & Services. Quality Service. Responsive Customer Service.">
+		<meta name="keywords" content="Grease, Kitchen Grease, Grease Recycling, Kitchen Grease Recycling, Grease Services,
+		Kitchen Grease Services">
+		<meta name="author" content="Chase Biscamp, Brent Reddish">
+		<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<title>
+		Premier Home
+	</title>
+</head>
+
+<body>
+
+<div class="serviceBlur">
+
+</div>
+
+<!--Request Service For. Constant. Do no change with any styling functions. ------------------------------------------>
+
+<div class="service">
+	<form id="sform" action="requestService.php">
+			
+			<h1>Need<br>Service?</h1>
+			
+			<hr style="border: 1px solid rgba(255, 0, 0, 0.4); width: 85%;">
+			
+			<label for="sname">Store Name</label><br><br>
+			<input type="text" id="sname" name="storeName" placeholder="Your Stores Name"><br><br>
+			
+			<label for="cname">Your Name</label><br><br>
+			<input type="text" id="cname" name="customerName" placeholder="Your Name"</label><br><br>
+			
+			<label for="pnumber">Phone Number</label><br><br>
+			<input type="text" id="pnumber" name="phoneNumber" placeholder="(###) ### - ####"><br><br>
+			
+			<label for="email">Email</label><br><br>
+			<input type="email" id="email" name="email" placeholder="youremail@email.com"><br><br>
+			
+			<label for="address">Location</label><br><br>
+			<input type="address" id="address" name="address" placeholder="Street, City, State, ZIP"><br><br>
+			
+			<button type="button" id="serviceButton" >Submit</button>
+			
+	</form>
+</div>
+
+<!--Content Card----------------------------------------------------------------------------------------------------->
+
+<div class="contentCard">
+
+	<!--Navigation Bar ----------------->
+	
+	<nav id="navbar">
+		<h1 onclick="services()">Services</h1>
+		<h1 onclick="locations()">Locations</h1>
+		<h1 onclick="gallery()">Gallery</h1>
+		<h1 onclick="contact()">Contact Us</h1>
+		<hr id=" navhr" style="border: 1px inset rgba(255, 0, 0, 0.2); width: 75%; margin-top: 0px;">
+	</nav>
+	
+	<!--Services------------------------>
+	
+	<div id="services" style="display: block">
+		<h1>Services</h1>
+	</div>
+	
+
+	<div id="locations" style="display: none">
+		<h1>Locations</h1>
+		
+		<h2>Serving Texas, New Mexico, and Oklahoma.<h2>
+		
+		<hr style="border: 1px solid rgba(255, 0, 0, 0.4); width: 95%;">
+		
+	</div>
+	
+	<div id="gallery" style="display: none">
+	
+		<img src="noimage.jpg">
+
+	</div>
+	
+	<!--Contact Info-------------------->
+	
+	<div id="contactInfo" style="display: none">
+	
+		<h1>Contact Us!</h1>
+		<hr style="border: 1px solid rgba(255, 0, 0, 0.4); width: 35%;">
+		<h1>PHONE: <a href="tel:+18885777364" style="text-decoration: none">(888) 577 - 7364</a><h1>
+		<h1>EMAIL: cbrownpremiergrease@gmail.com</h1>
+		
+	</div>
+	
+	
+
+</div>
+
+</body>
+
+</html>
